@@ -1,2 +1,0 @@
-import { NextResponse } from 'next/server';
-export async function GET() { return NextResponse.json({ status: 'ok', service: 'marketmate', integrations: { supabase: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY), paystack: Boolean(process.env.PAYSTACK_SECRET_KEY), whatsapp: Boolean(process.env.META_WHATSAPP_TOKEN && process.env.META_WHATSAPP_PHONE_NUMBER_ID) } }); }
